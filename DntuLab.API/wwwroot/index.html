@@ -1793,7 +1793,7 @@ function App() {
 
 
 
-      <main className="max-w-6xl mx-auto px-4 py-6">
+      <main className="max-w-6xl mx-auto px-4 py-6">\n        {actor === "ql" && <a href="/quan-ly-lich-hoc.html" className="inline-block mb-4 rounded-lg bg-[#8B0000] px-5 py-3 font-semibold text-white hover:bg-red-900"><I n="calendar-plus" c="mr-2" />Quản lý lịch học · Tạo lịch / Import Excel</a>}
         <div className="mb-4"><Alert type={dataError ? "warn" : "info"}>{dataError || (dataBusy ? "Đang đồng bộ dữ liệu từ DntuLab.API..." : "Đã đăng nhập API. Danh mục phòng, thiết bị, lịch và nhật ký được tải từ SQL Server. Các thao tác ghi dữ liệu cần được nối lần lượt với endpoint nghiệp vụ trước khi dùng như hệ thống thật.")}</Alert></div>
 
         <h2 className="text-xl font-bold text-stone-800 mb-4"><I n={ACTORS[actor].icon} c="mr-2 text-[#8B0000]" />{ACTORS[actor].label}</h2>
